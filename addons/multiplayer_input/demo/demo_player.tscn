@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bg6vhbq5vbwr7"]
+
+[ext_resource type="Script" uid="uid://xcf4lkbt50bq" path="res://addons/multiplayer_input/demo/demo_player.gd" id="1_nm6ov"]
+[ext_resource type="Texture2D" uid="uid://bak0cgmkvg0yn" path="res://icon.svg" id="2_pqsnb"]
+
+[node name="DemoPlayer" type="Node2D"]
+script = ExtResource("1_nm6ov")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(1, 1)
+texture = ExtResource("2_pqsnb")
+metadata/_edit_lock_ = true
+
+[node name="Player" type="Label" parent="."]
+offset_left = -20.0
+offset_top = -54.0
+offset_right = 20.0
+offset_bottom = -28.0
+text = "9"
+horizontal_alignment = 1
