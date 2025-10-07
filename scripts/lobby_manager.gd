@@ -18,7 +18,6 @@ func remove_player(device: int) -> void:
 func add_player_simple(device: int) -> void:
 	players.append({"device": device, "color": Color.WHITE, "ready": false})
 
-
 func set_player_ready(device: int, ready: bool) -> void:
 	for p in players:
 		if p.device == device:
