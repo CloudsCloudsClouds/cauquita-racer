@@ -7,5 +7,5 @@ class_name RaycastWheel #esta clase almacenara todas las propiedades de las rued
 @export var over_extend := 0.0
 @export var wheel_radius := 0.4
 @export var is_motor := false
-
+@export var grip_curve : Curve
 @onready var wheel: Node3D = get_child(0)
