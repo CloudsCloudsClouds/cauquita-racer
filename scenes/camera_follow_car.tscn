@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://gpbemehwtm61"]
 
 [ext_resource type="Script" uid="uid://bo6usyjycnvok" path="res://scripts/camera_follow_car.gd" id="1_0mf18"]
-[ext_resource type="Texture2D" uid="uid://c8h1raie1cdf5" path="res://assets/pastel-horizon-plus-1x.png" id="2_nc058"]
+[ext_resource type="Texture2D" uid="uid://ca7lhxwcloadr" path="res://assets/carnival-32-1x.png" id="2_nc058"]
 
 [sub_resource type="Shader" id="Shader_mk8vj"]
 code = "shader_type spatial;
@@ -95,7 +95,7 @@ render_priority = 0
 shader = SubResource("Shader_mk8vj")
 shader_parameter/TwixelAngle = 45.0
 shader_parameter/PixelSize = 4.000000142499999
-shader_parameter/FogColor = Color(0.6666667, 0.93333334, 0.91764706, 1)
+shader_parameter/FogColor = Color(0.38387498, 1.1453744, 1.2322817, 1)
 shader_parameter/FogStart = 25.0
 shader_parameter/FogEnd = 300.0
 shader_parameter/Quantize = true
@@ -103,6 +103,7 @@ shader_parameter/PaletteTexture = ExtResource("2_nc058")
 
 [sub_resource type="QuadMesh" id="QuadMesh_nc058"]
 material = SubResource("ShaderMaterial_0mf18")
+size = Vector2(3, 3)
 
 [node name="CameraFollowCar" type="Camera3D"]
 script = ExtResource("1_0mf18")

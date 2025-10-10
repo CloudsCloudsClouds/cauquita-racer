@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dgym1luoteeoa"]
+[gd_scene load_steps=22 format=3 uid="uid://dgym1luoteeoa"]
 
 [ext_resource type="Material" uid="uid://c77jipoi0a4kb" path="res://assets/materials/rubble.tres" id="1_kmpvh"]
 [ext_resource type="Script" uid="uid://c3offhmltwus5" path="res://scripts/raycast_car.gd" id="2_5xha7"]
@@ -67,6 +67,9 @@ vertex_color_use_as_albedo = true
 material = SubResource("StandardMaterial3D_uvi0d")
 size = Vector2(0.4, 1)
 orientation = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u8xrd"]
+albedo_color = Color(0.4090556, 2.081655e-05, 0.32798368, 1)
 
 [node name="Level1" type="Node3D"]
 
@@ -203,7 +206,12 @@ process_material = SubResource("ParticleProcessMaterial_khel2")
 draw_pass_1 = SubResource("QuadMesh_jbt3p")
 
 [node name="CameraFollowCar" parent="Car" node_paths=PackedStringArray("objective") instance=ExtResource("4_u8xrd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5848842, 4.6067867)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.642702, 7.8907843)
 objective = NodePath("..")
 
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1987915, 2.2707355, -12.373981)
+size = Vector3(9.027466, 5.1362305, 1)
+material = SubResource("StandardMaterial3D_u8xrd")
