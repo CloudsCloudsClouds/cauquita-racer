@@ -210,8 +210,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.642702, 7.8907843)
 objective = NodePath("..")
 
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+use_collision = true
 
 [node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1987915, 2.2707355, -12.373981)
-size = Vector3(9.027466, 5.1362305, 1)
+transform = Transform3D(1, 0, 0, 0, 0.3299378, 0.94400275, 0, -0.94400275, 0.3299378, 0.1987915, 2.1017523, -17.399864)
+size = Vector3(9.027466, 17.577576, 1)
+material = SubResource("StandardMaterial3D_u8xrd")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, -0.47709745, 0.8788504, 0, -0.8788504, -0.47709745, 0.1987915, 2.1017523, -50.065678)
+size = Vector3(9.027466, 17.577576, 1)
+material = SubResource("StandardMaterial3D_u8xrd")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 0.074369535, 0.9972308, 0, -0.9972308, 0.074369535, 0.1987915, 5.5368185, -34.077354)
+size = Vector3(9.027466, 17.577576, 1)
 material = SubResource("StandardMaterial3D_u8xrd")
