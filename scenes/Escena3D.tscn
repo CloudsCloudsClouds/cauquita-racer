@@ -1,6 +1,6 @@
 [gd_scene load_steps=22 format=3 uid="uid://dgym1luoteeoa"]
 
-[ext_resource type="Material" uid="uid://c77jipoi0a4kb" path="res://assets/materials/rubble.tres" id="1_kmpvh"]
+[ext_resource type="Material" uid="uid://yrehvvcknouu" path="res://assets/material.tres" id="1_kmpvh"]
 [ext_resource type="Script" uid="uid://c3offhmltwus5" path="res://scripts/raycast_car.gd" id="2_5xha7"]
 [ext_resource type="Script" uid="uid://diog0uae3yfq6" path="res://scripts/raycast_wheel.gd" id="3_equcc"]
 [ext_resource type="PackedScene" uid="uid://gpbemehwtm61" path="res://scenes/camera_follow_car.tscn" id="4_u8xrd"]
